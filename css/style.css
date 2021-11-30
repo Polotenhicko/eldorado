@@ -1,64 +1,182 @@
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/PTRootUI-Medium.eot');
-    src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
-        url('../fonts/PTRootUI-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PTRootUI-Medium.woff2') format('woff2'),
-        url('../fonts/PTRootUI-Medium.woff') format('woff'),
-        url('../fonts/PTRootUI-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'PT Root UI';
+  src: url('../fonts/PTRootUI-Medium.eot');
+  src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
+    url('../fonts/PTRootUI-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTRootUI-Medium.woff2') format('woff2'),
+    url('../fonts/PTRootUI-Medium.woff') format('woff'),
+    url('../fonts/PTRootUI-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'PT Root UI';
-    src: url('../fonts/PTRootUI-Bold.eot');
-    src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
-        url('../fonts/PTRootUI-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PTRootUI-Bold.woff2') format('woff2'),
-        url('../fonts/PTRootUI-Bold.woff') format('woff'),
-        url('../fonts/PTRootUI-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'PT Root UI';
+  src: url('../fonts/PTRootUI-Bold.eot');
+  src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
+    url('../fonts/PTRootUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTRootUI-Bold.woff2') format('woff2'),
+    url('../fonts/PTRootUI-Bold.woff') format('woff'),
+    url('../fonts/PTRootUI-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    font-family: 'PT Root UI';
-    color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: 'PT Root UI';
+  color: #000000;
 }
 
-@media (min-width: 280px) {    
-    .navbar {
-        padding: 9px 15px;
-        display: flex;
-        justify-content: space-between;
-    }
+@media (min-width: 280px) {
+  .header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-    .navbar .icons {
-        display: flex;
-        align-items: center;
-    }
+  .navbar {
+    padding: 9px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .navbar svg {
-        vertical-align: middle;
-    }
+  .navbar .icons {
+    display: flex;
+    align-items: center;
+  }
 
-    .navbar a:first-child {
-        margin-right: 15px;
-    }
+  .navbar svg {
+    vertical-align: middle;
+  }
 
-    .h1-wrapper {
-        background-color: #EFEFEF;
-    }
+  .navbar a:first-child {
+    margin-right: 15px;
+  }
 
-    .h1-wrapper .product-name {
-        font-size: 10px;
-        line-height: 14px;
-        padding: 5px 15px;
-        font-weight: 300;
-    }
+  .h1-wrapper {
+    background-color: #efefef;
+  }
+
+  .h1-wrapper .product-name {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 5px 15px;
+    font-weight: 300;
+  }
+
+  .main-wrapper {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  .main-wrapper h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 30px 0;
+  }
+
+  .section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .section h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .section .rect {
+    background-color: #171717;
+    border-radius: 5px;
+    padding: 20px 15px 25px 15px;
+    margin-bottom: 40px;
+  }
+
+  .rect .image-wrapper {
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+  }
+
+  .rect .description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 19px;
+  }
+
+  .advantage {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+
+  .advantage > div {
+    max-width: 142px;
+  }
+
+  .advantage .image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .advantage .circles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage .circles div {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+
+  /* Маргины, т.к. IE 11 не поддерживает гапы */
+
+  .advantage .circles div:nth-child(1) {
+    background: linear-gradient(270deg, #bef0fe 0%, #ffd6d3 100%);
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .advantage .circles div:nth-child(2) {
+    background: linear-gradient(270deg, #020202 0%, #666666 100%);
+    margin-bottom: 4px;
+  }
+
+  .advantage .circles div:nth-child(3) {
+    background: linear-gradient(270deg, #029965 0%, #66c1a2 100%);
+    margin-right: 4px;
+  }
+
+  .advantage .circles div:nth-child(4) {
+    background: linear-gradient(270deg, #faee61 0%, #fef694 100%);
+  }
+
+  .carcase > .image {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .carcase > p.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+  }
 }
