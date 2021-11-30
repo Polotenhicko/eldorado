@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PTRootUI-Medium.eot');
+    src: local('PT Root UI Medium'), local('PTRootUI-Medium'),
+        url('../fonts/PTRootUI-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTRootUI-Medium.woff2') format('woff2'),
+        url('../fonts/PTRootUI-Medium.woff') format('woff'),
+        url('../fonts/PTRootUI-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PTRootUI-Bold.eot');
+    src: local('PT Root UI Bold'), local('PTRootUI-Bold'),
+        url('../fonts/PTRootUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTRootUI-Bold.woff2') format('woff2'),
+        url('../fonts/PTRootUI-Bold.woff') format('woff'),
+        url('../fonts/PTRootUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'PT Root UI';
+    color: #000000;
+}
+
+@media (min-width: 280px) {    
+    .navbar {
+        padding: 9px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar svg {
+        vertical-align: middle;
+    }
+
+    .navbar a:first-child {
+        margin-right: 15px;
+    }
+
+    .h1-wrapper {
+        background-color: #EFEFEF;
+    }
+
+    .h1-wrapper .product-name {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 5px 15px;
+        font-weight: 300;
+    }
+}
