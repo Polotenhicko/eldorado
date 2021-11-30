@@ -179,4 +179,78 @@
     line-height: 21px;
     margin-bottom: 50px;
   }
+
+  .property > .phone-camera {
+    max-width: none;
+    width: 320px;
+    height: 170px;
+    transform: translateX(-15px);
+    margin-bottom: 30px;
+  }
+  /* 
+  .property > .capability > .play {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #7981fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .property > .capability > .play > .white-ellipse {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .property > .capability > .play .triangle-external {
+    width: 0;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid rgb(49, 149, 89);
+    position: absolute;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .property > .capability > .play .triangle-external > .triangle-interior {
+    width: 0;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 13px solid rgb(255, 255, 255);
+    position: absolute;
+    right: 3px;
+  } */
+
+  .property > .capability > .icons {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .property > .capability > p.description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .property > .capability > p.description:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .property > .capability {
+    margin-bottom: 70px;
+  }
 }
