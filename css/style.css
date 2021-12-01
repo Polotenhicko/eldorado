@@ -40,6 +40,7 @@
 
   .header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    max-height: 50px;
   }
 
   .navbar {
@@ -51,6 +52,7 @@
   .navbar .icons {
     display: flex;
     align-items: center;
+    max-height: 30px;
   }
 
   .navbar svg {
@@ -179,7 +181,8 @@
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    text-align: center;
+    justify-content: center;
+    display: flex;
   }
 
   .carcase > p.description {
@@ -195,7 +198,7 @@
     width: 320px;
     height: 170px;
     transform: translateX(-15px);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   /* Попытки сделать первую иконку в Съёмка и видео
   .property > .capability > .play {
@@ -245,7 +248,7 @@
   } */
 
   .property > .capability > .icons {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -266,7 +269,7 @@
 
   .property > .accessories .accessories-img {
     padding-bottom: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -281,7 +284,7 @@
     line-height: 17px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     gap: 7px;
   }
 
