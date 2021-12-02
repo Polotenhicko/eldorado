@@ -25,6 +25,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
@@ -44,12 +45,20 @@
 
   .navbar {
     padding: 9px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .navbar .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     max-height: 30px;
   }
@@ -114,6 +123,8 @@
   .rect .image-wrapper {
     padding: 0 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -137,8 +148,13 @@
   }
 
   .design-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -151,7 +167,10 @@
   }
 
   .design-wrapper .colors .circles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -164,22 +183,50 @@
   /* Маргины, т.к. IE 11 не поддерживает гапы */
 
   .design-wrapper .colors .circles div:nth-child(1) {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#bef0fe),
+      to(#ffd6d3)
+    );
     background: linear-gradient(270deg, #bef0fe 0%, #ffd6d3 100%);
     margin-right: 4px;
     margin-bottom: 4px;
   }
 
   .design-wrapper .colors .circles div:nth-child(2) {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#020202),
+      to(#666666)
+    );
     background: linear-gradient(270deg, #020202 0%, #666666 100%);
     margin-bottom: 4px;
   }
 
   .design-wrapper .colors .circles div:nth-child(3) {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#029965),
+      to(#66c1a2)
+    );
     background: linear-gradient(270deg, #029965 0%, #66c1a2 100%);
     margin-right: 4px;
   }
 
   .design-wrapper .colors .circles div:nth-child(4) {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#faee61),
+      to(#fef694)
+    );
     background: linear-gradient(270deg, #faee61 0%, #fef694 100%);
   }
 
@@ -187,7 +234,11 @@
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -203,6 +254,7 @@
     max-width: none;
     width: 320px;
     height: 170px;
+    -webkit-transform: translateX(-15px);
     transform: translateX(-15px);
     margin-bottom: 25px;
   }
@@ -274,7 +326,10 @@
   }
 
   .property > .accessories > .acccessories-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 50px;
   }
@@ -349,7 +404,11 @@
   }
 
   .apps > .items > .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -362,6 +421,9 @@
   }
 
   .apps > .items > .item:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
@@ -378,6 +440,8 @@
     font-size: 14px;
     line-height: 21px;
     opacity: 0.7;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     margin-right: auto;
     margin-left: 30px;
@@ -499,17 +563,27 @@
   }
 
   .new-design > .design-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .new-design > .design-wrapper > .colors,
   .new-design > .design-wrapper > .glass {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 
   .new-design > .design-wrapper > .carcase {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 
@@ -536,12 +610,20 @@
   }
 
   .property .shooting-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .property .shooting-wrapper > .capability > .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -555,6 +637,7 @@
   }
 
   .property .shooting-wrapper .phone-camera {
+    -webkit-transform: none;
     transform: none;
     max-width: 100%;
     width: 325px;
@@ -588,7 +671,11 @@
   }
 
   .accessories .acccessories-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 50px;
   }
@@ -621,7 +708,10 @@
   }
 
   .section.apps > .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -629,6 +719,9 @@
     margin-bottom: 40px;
     padding-bottom: 0;
     border-bottom: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -665,13 +758,18 @@
   }
 
   .new-design > .design-wrapper {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding-bottom: 62px;
   }
 
   .new-design > .design-wrapper > div {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    -ms-flex-negative: 1;
     flex-shrink: 1;
+    -ms-flex-preferred-size: 223px;
     flex-basis: 223px;
   }
 
@@ -681,6 +779,7 @@
 
   .new-design > .design-wrapper .rect {
     margin-bottom: 0;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     /* max-width: 222px; */
   }
@@ -750,6 +849,7 @@
   }
 
   .property > .accessories > .acccessories-wrapper {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
 
